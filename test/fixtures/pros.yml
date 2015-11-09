@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author: MyString
+  week: 1
+  qb: MyString
+  qb_x: MyText
+  rb1: MyString
+  rb1_x: MyText
+  rb2: MyString
+  rb2_x: MyText
+  wr1: MyString
+  wr1_x: MyText
+  wr2: MyString
+  wr2_x: MyText
+  wr3: MyString
+  wr3_x: MyText
+  te: MyString
+  te_x: MyText
+  kick: MyString
+  kick_x: MyText
+
+two:
+  author: MyString
+  week: 1
+  qb: MyString
+  qb_x: MyText
+  rb1: MyString
+  rb1_x: MyText
+  rb2: MyString
+  rb2_x: MyText
+  wr1: MyString
+  wr1_x: MyText
+  wr2: MyString
+  wr2_x: MyText
+  wr3: MyString
+  wr3_x: MyText
+  te: MyString
+  te_x: MyText
+  kick: MyString
+  kick_x: MyText

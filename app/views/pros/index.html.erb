@@ -1,0 +1,33 @@
+<p><% id="notice" %><%= notice %></p>
+
+<% Time::DATE_FORMATS[:just_date] = "%b %d, %Y" %>
+<% Time::DATE_FORMATS[:just_time] = "%I:%M%p" %>
+
+<h1>Lineup Entries</h1>
+<p><%= link_to new_pro_path do %>
+  <span class="glyphicon glyphicon-plus"></span>Add
+<% end %>
+</p>
+
+<div class="row">
+  <% @pros.each do |pro| %>
+    <div class="col-md-6">
+      <div class="well">
+        <h4><b>Week:</b> <%= pro.week %></h4>
+        <h4>by: <%= pro.author %></h4>
+
+        <h4>Written on <%= pro.created_at.to_s(:just_date) %> at <%= pro.created_at.to_s(:just_time) %>
+        </h4><br>
+        <b>Quarterback:</b> <%= pro.qb %><br></b>
+        <b>Runningback 1:</b> <%= pro.rb1 %><br>
+        <b>Runningback 2:</b> <%= pro.rb2 %><br>
+        <b>Wide Receiver 1:</b> <%= pro.wr1 %><br>
+        <b>Wide Receiver 2:</b> <%= pro.wr2 %><br>
+        <b>Wide Receiver 3:</b> <%= pro.wr3 %><br>
+        <b>Tight End:</b> <%= pro.te %><br>
+        <b>Kicker:</b> <%= pro.kick %><br>
+        <br><%= pro.article %>
+      </div>
+    </div>
+  <% end %>
+</div>
