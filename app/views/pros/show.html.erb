@@ -55,5 +55,9 @@
   <%= @pro.article %>
 </p>
 
-<%= link_to 'Edit', edit_pro_path(@pro) %> |
-<%= link_to 'Back', pros_path %>
+<h4><%= link_to edit_pro_path(@pro) do %>
+  <span class="glyphicon glyphicon-pencil"</span> Edit
+<% end %><br>
+<%= link_to pros_path do %>
+  <span class="glyphicon glyphicon-circle-arrow-left"</span> Back
+<% end %></h4>

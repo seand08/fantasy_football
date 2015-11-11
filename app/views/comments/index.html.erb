@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Comments:</h1>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <%= @pro.title %>
+  </div>
+  <div class="panel-body">
+    <p>by <%= @pro.username %></p>
+  <p>
+  <strong>Week:</strong>
+  <%= @pro.week %>
+  </p>
+
+  <p>
+    <strong>Qb:</strong>
+    <%= @pro.qb %>
+  </p>
+
+  <p>
+    <strong>Rb1:</strong>
+    <%= @pro.rb1 %>
+  </p>
+
+  <p>
+    <strong>Rb2:</strong>
+    <%= @pro.rb2 %>
+  </p>
+
+  <p>
+    <strong>Wr1:</strong>
+    <%= @pro.wr1 %>
+  </p>
+
+  <p>
+    <strong>Wr2:</strong>
+    <%= @pro.wr2 %>
+  </p>
+
+  <p>
+    <strong>Wr3:</strong>
+    <%= @pro.wr3 %>
+  </p>
+
+  <p>
+    <strong>Te:</strong>
+    <%= @pro.te %>
+  </p>
+
+  <p>
+    <strong>Kick:</strong>
+    <%= @pro.kick %>
+  </p>
+
+  <p>
+    <strong>Article:</strong>
+    <%= @pro.article %>
+  </p>
+    </div>
+  </div>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    Make a Comment
+  </div>
+  <div class="panel-body">
+    <%= render 'comments/form' %>
+  </div>
+  <div class="panel-footer">
+    <%#= link_to 'Show', blog_post, class: "btn btn-primary" %>
+    <%= link_to 'Edit', edit_blog_post_path(blog_post), class: "btn btn-warning" %>
+    <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  </div>
+</div>
+
+<div>
+  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
+  <%= link_to 'Back', blog_posts_path %>
+</div>
+
+<br>
+
+<%= link_to 'New Comment', new_comment_path %>

@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.signout {
+	position: absolute;
+	right: 0px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.well {
+	background: rgba(0,153,51,0.3);
+}

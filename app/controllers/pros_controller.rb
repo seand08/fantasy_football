@@ -1,6 +1,7 @@
 class ProsController < ApplicationController
   before_action :set_pro, only: [:show, :edit, :update, :destroy]
 
+  before_filter :authenticate_user!
   # GET /pros
   # GET /pros.json
   def index
